@@ -9,7 +9,6 @@
       <e p="Assets" t="Include">
         <e p="Scripts" t="Include">
           <e p="AutoSwitchController.cs" t="Include" />
-          <e p="BulbController.cs" t="Include" />
           <e p="ManualSwitchController.cs" t="Include" />
           <e p="MovementController.cs" t="Include" />
         </e>

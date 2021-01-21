@@ -297,6 +297,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 518edbc723e4ba147b53832312c82715, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bulbAnimator: {fileID: 1536138975}
 --- !u!1 &658735377
 GameObject:
   m_ObjectHideFlags: 0
@@ -1297,27 +1298,14 @@ GameObject:
   m_Component:
   - component: {fileID: 1536138974}
   - component: {fileID: 1536138973}
-  - component: {fileID: 1536138972}
+  - component: {fileID: 1536138975}
   m_Layer: 0
-  m_Name: BulbOff
+  m_Name: Bulb
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1536138972
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1536138971}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 42cad1a6f78f3ff4f874fd8f1d6ff13b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  autoSwitch: {fileID: 2032676874}
 --- !u!212 &1536138973
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1382,6 +1370,25 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &1536138975
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1536138971}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4610a864b8112f347b224eaec04d591b, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &1726716787
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1462,4 +1469,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11bdb80455755fd4291452950a8800b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulbController: {fileID: 0}
+  bulbAnimator: {fileID: 1536138975}

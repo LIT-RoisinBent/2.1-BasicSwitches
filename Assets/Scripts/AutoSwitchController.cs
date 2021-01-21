@@ -14,10 +14,10 @@ public class AutoSwitchController : MonoBehaviour
     // switchOff reflects whether the switch is on ot off
     private bool switchOff = true;
 
+
     // switchAnimator will hold the gameobjects Animator
     private Animator switchAnimator;
-
-    public BulbController bulbController;
+    public Animator bulbAnimator;
 
     // The Awake function of each class is called before the Start function. It is
     // here you should initialise class properties/variables like those above.
@@ -35,25 +35,25 @@ public class AutoSwitchController : MonoBehaviour
     {
         switchOff = false;
         switchAnimator.SetBool("SwitchOff", switchOff);
+        bulbAnimator.SetBool("bulbState", true);
     }
 
     public void turnOff()
     {
         switchOff = true;
         switchAnimator.SetBool("SwitchOff", switchOff);
+        bulbAnimator.SetBool("bulbState", false);
     }
 
     void OnTriggerEnter2D(Collider2D other)
     {
         Debug.Log("Someone entered the switch trigger");
-        bulbController.BulbLightOn();
         this.turnOn();
     }
 
     void OnTriggerExit2D(Collider2D other)
     {
         Debug.Log("Someone left the switch trigger");
-        bulbController.BulbLightOff();
         this.turnOff();
     }
 }

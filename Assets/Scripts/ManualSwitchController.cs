@@ -18,6 +18,7 @@ public class ManualSwitchController : MonoBehaviour
 {
     // switchOff reflects whether the switch is on ot off
     private bool switchOff = true;
+    private bool bulbState = false;
 
     // determines whether the switch is enabled or not. If enabled the
     // player can toggle the switch by pressing the spacebar
@@ -25,6 +26,7 @@ public class ManualSwitchController : MonoBehaviour
 
     // switchAnimator will hold the gameobjects Animator
     private Animator switchAnimator;
+    public Animator bulbAnimator;
 
     // The Awake function of each class is called before the Start function. It is
     // here you should initialise class properties/variables like those above.
@@ -49,13 +51,17 @@ public class ManualSwitchController : MonoBehaviour
     public void turnOn()
     {
         switchOff = false;
+        bulbState = true;
         switchAnimator.SetBool("SwitchOff", switchOff);
+        bulbAnimator.SetBool("bulbState", bulbState);
     }
 
     public void turnOff()
     {
         switchOff = true;
+        bulbState = false;
         switchAnimator.SetBool("SwitchOff", switchOff);
+        bulbAnimator.SetBool("bulbState", bulbState);
     }
 
     public void enableSwitch()
@@ -74,6 +80,14 @@ public class ManualSwitchController : MonoBehaviour
     {
         if (switchEnabled == true)
         {
+            if (switchOff)
+            {
+                turnOff();
+            }
+            else if (!switchOff)
+            {
+                turnOn();
+            }
             switchOff = !switchOff;
             switchAnimator.SetBool("SwitchOff", switchOff);
         }

@@ -2,9 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3511e696-2782-4a90-bd9a-6c801ff52359" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/BulbController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/BulbController.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.2.1-BasicSwitches/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.2.1-BasicSwitches/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.2.1-BasicSwitches/.idea/riderModule.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.2.1-BasicSwitches/.idea/riderModule.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.2.1-BasicSwitches/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.2.1-BasicSwitches/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animator/SwitchAnimator.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animator/SwitchAnimator.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/B-UsingTilemap.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/B-UsingTilemap.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/AutoSwitchController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AutoSwitchController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BulbController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BulbController.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ManualSwitchController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ManualSwitchController.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,8 +22,9 @@
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/Assets/Scripts/AutoSwitchController.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/BulbController.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/AutoSwitchController.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/ManualSwitchController.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1nIH3WKkT1DFQFwnstDhNfy1d0S" />
@@ -62,7 +69,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1611070491007</updated>
-      <workItem from="1611070500273" duration="982000" />
+      <workItem from="1611070500273" duration="2478000" />
+      <workItem from="1611220088423" duration="4433000" />
     </task>
     <servers />
   </component>
@@ -81,6 +89,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
